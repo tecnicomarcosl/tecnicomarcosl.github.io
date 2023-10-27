@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirección al posar y hacer clic</title>
+    <style>
+        body {
+            background-image: url('https://static2.makeuseofimages.com/wordpress/wp-content/uploads/2016/09/javascript-udemy-courses.jpg'); 
+            background-size: cover; 
+        }
+
+        .otros-enlaces {
+            text-align: center;
+        }
+
+        .otros-enlaces a {
+            display: inline-block;
+            margin: 30px;
+        }
+
+        .otros-enlaces img {
+            width: 130px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="otros-enlaces">
+        <a href="https://www.google.com"><img src="https://cdn.icon-icons.com/icons2/836/PNG/512/Google_icon-icons.com_66793.png" alt="Google"></a>
+        <a href="https://www.youtube.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Youtube.png/2560px-Youtube.png" alt="YouTube"></a>
+        <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19761.png" alt="Facebook"></a>
+    </div>
+
+    <script type="text/javascript">
+        const enlace = document.querySelector('.otros-enlaces a[href="https://www.facebook.com"]');
+
+        enlace.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'https://www.csoonline.com/wp-content/uploads/2023/06/security_risk_assessment_analysis_vulnerability_danger_thinkstock_902893076-100750007-orig.jpg?resize=1024%2C683&quality=50&strip=all';
+        });
+    </script>
+</body>
+</html>
